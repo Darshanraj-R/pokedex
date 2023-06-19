@@ -1,0 +1,161 @@
+/* #container{
+    background-color: bisque;
+    background-color: green;
+} */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+#headerLeft .logo-pokemon{
+  position: relative;
+  display: flex;
+ 
+  font-family: Pokemon Solid,sans-serif;
+  font-size: max(3vw,3rem);
+  color: #ffcb05;
+  text-align: center;
+  -webkit-text-stroke: 3px #3b5ca8;
+  text-shadow: -1px 0px 0px #1d2c5e;
+}
+
+#headContainer{
+display: flex;
+justify-content: space-between;
+background-color: rgb(189, 240, 126);
+padding: 10px;
+align-items: center;
+}
+
+#headerLeft img{
+ width: 150px;
+}
+
+#headerRight{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+#headerRight div {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #373920;
+  
+}
+
+
+
+
+
+
+.bodyContainer img{
+  width: 100%;
+
+}
+
+.Body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.foodName{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 39px;
+}
+#headerCenter{
+ 
+  border-radius: 4px;
+  color: #373920;
+}
+
+
+.icons{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #f7f7f7;
+  font-size: 18px;
+}
+
+ .footer-bottom {
+  background-color: #333;
+  color: #f8f8f8;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+ 
+}
+.df{
+ position: relative;
+ left: 3px;
+}
+.footer-bottom p a {
+  color: #777;
+  text-decoration: none;
+}
