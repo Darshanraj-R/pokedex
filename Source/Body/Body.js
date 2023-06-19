@@ -54,10 +54,15 @@ export const Body = () => {
     <Loader />
   ) : (
     <>
+
+
       <div className="downbuttons">
-        <button onClick={handlePrevClick}>Prev</button>
-        <button onClick={handleNextClick}>Next</button>
+        <button className='btndes' onClick={handlePrevClick}>Prev</button>
+        <button className='btndes' onClick={handleNextClick}>Next</button>
       </div>
+
+
+
 
       <div className="Body">
         {pokedata.map((poke) => {
@@ -66,8 +71,8 @@ export const Body = () => {
       </div>
 
       <div className="downbuttons">
-        <button onClick={handlePrevClick}>Prev</button>
-        <button onClick={handleNextClick}>Next</button>
+        <button className='btndes' onClick={handlePrevClick}>Prev</button>
+        <button className='btndes' onClick={handleNextClick}>Next</button>
       </div>
 
       {/* Conditionally render PokemonDetatil component */}
@@ -109,7 +114,13 @@ export const PokemonDetatil = (props) => {
         move3 : json.moves[2]['move']['name'],
         move4 : json.moves[3]['move']['name'],
         move5 : json.moves[4]['move']['name'],
+        move6 : json.moves[5]['move']['name'],
+        move7 : json.moves[6]['move']['name'],
+        move8 : json.moves[7]['move']['name'],
         base_experience : json.base_experience,
+        height: json.height,
+        weight: json.weight,
+
       }
       setFulldata(obj);
       
@@ -140,8 +151,8 @@ export const PokemonDetatil = (props) => {
   return (
     <>
       <div className="bodyContainer" onClick={handleOpenPopup}>
-        <p className="pokename">{capitalizedFirstLetter}</p>
-        <button className='info' onClick={handleOpenPopup}>info</button>
+        <p className="pokename">{capitalizedFirstLetter}🔖</p>
+        
         <img className="pokeimg" src={imageUrl} alt="not found" />
        
 
@@ -149,14 +160,18 @@ export const PokemonDetatil = (props) => {
   <div className="main">
     <div className="popup">
       <div className="popup-header">
-        <p className="pokename">{capitalizedFirstLetter} </p>
+        <p className="poptext">{capitalizedFirstLetter} </p> 
         <img className="pokemonimg" src={imageUrl} alt="not found" />
         <h1 onClick={handleOpenPopup}>X</h1>
       </div>
       <div>
+      <p>Height: {fullData.height} m</p>
+      <p>weight: {fullData.weight} Kg</p>
         <p>Abilities: {fullData.ablity1}, {fullData.ablity2}</p>
         <p>Moves: {fullData.move1}, {fullData.move2}, {fullData.move3}, {fullData.move4}, {fullData.move5}</p>
         <p>Base experience: {fullData.base_experience}</p>
+        
+        
       </div>
     </div>
   </div>
